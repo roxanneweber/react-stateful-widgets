@@ -57,7 +57,7 @@ export default function Spinner() {
 				) /* STEP 2 */
 			}
 			<button id="toggleSpinner" onClick={toggleSpinner}>
-				{!spinnerOn ? "Hide Spinner" : "Show Spinner"} {/* STEP 3 */}
+				{!spinnerOn ? "Show Spinner" : "Hide Spinner"} {/* STEP 3 */}
 			</button>
 		</div>
 	);
