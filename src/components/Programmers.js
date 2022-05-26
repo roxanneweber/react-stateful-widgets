@@ -1,13 +1,10 @@
 /*
 PROGRAMMERS Instructions
-
 Watch this short video:
 https://tk-assets.lambdaschool.com/1ea6e6a2-2ef1-45de-bcab-b99a8f775870_programmers.gif
-
 This component keeps track of a list of pioneers in the field of programming on the one hand,
 and the id of the currently featured programmer on the other. That's two slices of state!
 We can only feature one awesome programmer at a time.
-
 Find comments below to help you along.
 */
 
@@ -15,7 +12,6 @@ import React, { useState } from "react";
 
 // Use this variable ONLY to initialize a slice of state!
 // There is something in the JSX right now breaking this rule...
-// The export syntax is necessary for the testing library to be able to import the array.
 export const listOfAwesome = [
 	{ id: "1", name: "Ada Lovelace" },
 	{ id: "2", name: "Grace Hopper" },
@@ -59,8 +55,9 @@ export default function Programmers() {
 							{dev.name}{" "}
 							<button
 								onClick={() => {
-									/* in here set the featured id to be dev.id */
-									setFeatured(dev.id);
+									setFeatured(
+										dev.id
+									); /* in here set the featured id to be dev.id */
 								}}
 							>
 								Feature
